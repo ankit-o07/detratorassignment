@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Responsive UI with Material-UI
 
-## Getting Started
+This project is a responsive user interface built with Material-UI and React. It includes dynamic layouts that adapt to different screen sizes using Material-UI's `sx` prop with media queries.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Header Section
+- **Brand Name**: Displays the brand name prominently on all screens.
+- **Search Bar**: Visible on larger screens, hidden on screens smaller than 600px.
+- **User Section**: Includes an avatar and a name. On smaller screens, the name is hidden, but the avatar remains visible.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Main Content Section
+- **Left Box**: The left content box adjusts dynamically:
+  - Has a margin (`ml`) of `12rem` on larger screens.
+  - Margin is removed (`ml: 0`) on smaller screens.
+- **Right Box**: Visible on larger screens, completely hidden on smaller screens.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
+- **React**: For building the user interface.
+- **Material-UI**: For styling and responsive design.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation and Setup
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   ```
 
-## Learn More
+2. Navigate to the project directory:
+   ```bash
+   cd <project-directory>
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## File Structure
+- **Header Section**:
+  - Contains the brand name, search bar, and user section.
+  - Uses `Stack` for layout and `Box` for styling.
+- **Main Content Section**:
+  - Divided into a left and right column.
+  - Each column has its own responsive styling.
 
-## Deploy on Vercel
+## Media Query Behavior
+- **Search Bar**:
+  - Hidden on screens smaller than 600px.
+- **User Name**:
+  - Hidden on screens smaller than 600px, but the avatar remains visible.
+- **Left Box**:
+  - Removes extra margin (`ml: 0`) on screens smaller than 600px.
+- **Right Box**:
+  - Hidden on screens smaller than 600px.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dependencies
+- **React**: `^18.x`
+- **Material-UI**:
+  - Core: `@mui/material`
+  - System: `@mui/system`
+  - Icons: `@mui/icons-material`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How to Customize
+- Modify the `sx` prop in the code to adjust styles.
+- Update media query breakpoints (e.g., `600px`) as needed.
+
+## Screenshots
+Add screenshots here to illustrate the responsive behavior of your UI.
+![alt text](image.png)
+![alt text](image-1.png)
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+### Author
+Created by Ankit.
