@@ -21,17 +21,12 @@ This project is a responsive user interface built with Material-UI. It includes 
    git clone https://github.com/ankit-o07/detratorassignment.git
    ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd my-next-app
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm run dev
    ```
