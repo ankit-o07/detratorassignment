@@ -1,6 +1,6 @@
 # Responsive UI with Material-UI
 
-This project is a responsive user interface built with Material-UI and React. It includes dynamic layouts that adapt to different screen sizes using Material-UI's `sx` prop with media queries.
+This project is a responsive user interface built with Material-UI. It includes dynamic layouts that adapt to different screen sizes using Material-UI's sx prop with media queries. It does not use any CSS, SCSS, or React.
 
 ## Features
 
@@ -9,25 +9,21 @@ This project is a responsive user interface built with Material-UI and React. It
 - **Search Bar**: Visible on larger screens, hidden on screens smaller than 600px.
 - **User Section**: Includes an avatar and a name. On smaller screens, the name is hidden, but the avatar remains visible.
 
-### Main Content Section
-- **Left Box**: The left content box adjusts dynamically:
-  - Has a margin (`ml`) of `12rem` on larger screens.
-  - Margin is removed (`ml: 0`) on smaller screens.
-- **Right Box**: Visible on larger screens, completely hidden on smaller screens.
+
 
 ## Technology Stack
-- **React**: For building the user interface.
+- **Next js**: For building the user interface.
 - **Material-UI**: For styling and responsive design.
 
 ## Installation and Setup
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ankit-o07/detratorassignment.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd <project-directory>
+   cd my-next-app
    ```
 
 3. Install dependencies:
@@ -40,23 +36,6 @@ This project is a responsive user interface built with Material-UI and React. It
    npm run dev
    ```
 
-## File Structure
-- **Header Section**:
-  - Contains the brand name, search bar, and user section.
-  - Uses `Stack` for layout and `Box` for styling.
-- **Main Content Section**:
-  - Divided into a left and right column.
-  - Each column has its own responsive styling.
-
-## Media Query Behavior
-- **Search Bar**:
-  - Hidden on screens smaller than 600px.
-- **User Name**:
-  - Hidden on screens smaller than 600px, but the avatar remains visible.
-- **Left Box**:
-  - Removes extra margin (`ml: 0`) on screens smaller than 600px.
-- **Right Box**:
-  - Hidden on screens smaller than 600px.
 
 ## Dependencies
 - **React**: `^18.x`
